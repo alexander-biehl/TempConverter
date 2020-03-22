@@ -5,12 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/myColor"
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/inputValue"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"/>
 
     <RadioGroup
         android:id="@+id/radioGroup0"
@@ -22,14 +25,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
-            android:text="RadioButton" />
+            android:text="@string/celsius" />
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="RadioButton" />
+            android:text="@string/fahrenheit" />
 
     </RadioGroup>
 
@@ -38,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:text="Button" />
+        android:text="@string/calc"
+        android:onClick="onClick"/>
 
 </LinearLayout>
