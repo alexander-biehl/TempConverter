@@ -8,3 +8,6 @@ android:
     - build-tools-29.0.3
     # the android SDK version that the project is targeting
     - android-29
+
+script:
+  - ./gradlew build check
