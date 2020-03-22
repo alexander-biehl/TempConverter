@@ -1,0 +1,10 @@
+language: android
+dist: trusty
+android:
+  components:
+    # - tools
+    # - platform-tools
+    # build tools version for the project
+    - build-tools-29.0.3
+    # the android SDK version that the project is targeting
+    - android-29
