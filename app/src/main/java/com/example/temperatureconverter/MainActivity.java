@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         inputField = (EditText) findViewById(R.id.inputValue);
     }
 
-    public void onClick(View v) {
+    void onClick(View v) {
         switch (v.getId()) {
             case R.id.button1:
                 RadioButton celsiusButton = (RadioButton) findViewById(R.id.radio0);
